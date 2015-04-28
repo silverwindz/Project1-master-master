@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.silverwindz.project1.FoodAct">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Food Calculator"
+        android:id="@+id/textView30"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="breakfast"
+            android:id="@+id/breakfast"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="buttonFAClicked"
+            android:layout_alignParentEnd="false" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="lunch"
+            android:id="@+id/lunch"
+            android:layout_below="@+id/breakfast"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="59dp"
+            android:onClick="buttonFAClicked" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="dinner"
+            android:id="@+id/din"
+            android:layout_below="@+id/lunch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="59dp"
+            android:onClick="buttonFAClicked" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Output Calories"
+            android:id="@+id/OC"
+            android:textColor="#ffa09a9a"
+            android:textStyle="bold|italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#ff3e414d"
+            android:textSize="22dp"
+            android:layout_below="@+id/din"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/clear" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/clear"
+            android:layout_above="@+id/confirm"
+            android:layout_centerHorizontal="true"
+            android:onClick="buttonFAClicked" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to main"
+            android:id="@+id/confirm"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="buttonFAClicked"
+            android:nestedScrollingEnabled="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

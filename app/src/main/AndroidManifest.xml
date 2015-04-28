@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.silverwindz.project1" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginAct"
+            android:label="@string/name1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BMRcal"
+            android:label="@string/name2" >
+        </activity>
+        <activity
+            android:name=".Exercal"
+            android:label="@string/name3" >
+        </activity>
+        <activity
+            android:name=".exercise_list"
+            android:label="@string/name4" >
+        </activity>
+        <activity
+            android:name=".information"
+            android:label="@string/name5" >
+        </activity>
+        <activity
+            android:name=".RegisterAct"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".FoodAct"
+            android:label="@string/title_activity_food" >
+        </activity>
+        <activity
+            android:name=".justfood"
+            android:label="@string/title_activity_justfood" >
+        </activity>
+        <activity
+            android:name=".fruitdrink"
+            android:label="@string/title_activity_justfruit" >
+        </activity>
+        <activity
+            android:name=".justdrink"
+            android:label="@string/title_activity_justdrink" >
+        </activity>
+        <activity
+            android:name=".choice"
+            android:label="@string/title_activity_choice" >
+        </activity>
+        <activity
+            android:name=".FoodAct2"
+            android:label="@string/title_activity_food_act2" >
+        </activity>
+        <activity
+            android:name=".choice2"
+            android:label="@string/title_activity_choice2" >
+        </activity>
+        <activity
+            android:name=".choice3"
+            android:label="@string/title_activity_choice3" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff2f2f2f"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Foods"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff00ff48"
+        android:clickable="false"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foodlists"
+        android:layout_below="@+id/textview4646"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steamed chicken with rice"
+            android:id="@+id/scr"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noodle"
+            android:id="@+id/nd"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stewed pork leg on rice"
+            android:id="@+id/spl"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wide rice noodles with vegetables and meat "
+            android:id="@+id/wrnoodle"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fried rice"
+            android:id="@+id/fr"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barbecued red pork in sauce with rice"
+            android:id="@+id/brp"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rice topped with stir-fried pork and basil"
+            android:id="@+id/rt"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="minced pork omelet"
+            android:id="@+id/mpo"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pad Thai"
+            android:id="@+id/pt"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congee"
+            android:id="@+id/cg"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rice crispy pork"
+            android:id="@+id/rcr"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality"
+        android:id="@+id/quality"
+        android:textSize="16dp"
+        android:textColor="#ff00ff99"
+        android:layout_below="@+id/foodlists"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qualityblank"
+        android:textColor="#ffa09a9a"
+        android:inputType="numberDecimal"
+        android:enabled="true"
+        android:layout_below="@+id/quality"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="italic"
+        android:background="#ff3e414d"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Foods:"
+        android:id="@+id/textview4646"
+        android:textSize="16dp"
+        android:textColor="#ff00ff99"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonFOClicked" />
+
+</RelativeLayout>

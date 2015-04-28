@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff2f2f2f"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fruits &amp; Drinks"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff00ff48"
+        android:clickable="false"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fruitlists"
+        android:layout_below="@+id/textview4646"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watermelon"
+            android:id="@+id/Wm"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pitaya (Kaew Mungorn)"
+            android:id="@+id/km"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mango"
+            android:id="@+id/mg"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banana"
+            android:id="@+id/bnn"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guava"
+            android:id="@+id/gv"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rose apple"
+            android:id="@+id/ra"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality"
+        android:id="@+id/quality"
+        android:layout_below="@+id/fruitlists"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="16dp"
+        android:textColor="#ff00ff99" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fruits:"
+        android:id="@+id/textview4646"
+        android:textSize="16dp"
+        android:textColor="#ff00ff99"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonFDClicked"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Drinks:"
+        android:id="@+id/textView3"
+        android:textSize="16dp"
+        android:textColor="#ff00ff99"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/quality" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/drinklists"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milo"
+            android:id="@+id/milo"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coke"
+            android:id="@+id/coke"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate (cool)"
+            android:id="@+id/coco"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vitamilk"
+            android:id="@+id/vm"
+            android:checked="false"
+            android:textColor="#ff00caff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/fruitlists"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="16dp"
+            android:textColor="#ff00ff99" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/drinkql"
+        android:textColor="#ffa09a9a"
+        android:inputType="numberDecimal"
+        android:enabled="true"
+        android:textStyle="italic"
+        android:background="#ff3e414d"
+        android:textSize="16dp"
+        android:layout_below="@+id/drinklists"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fruitqL"
+        android:textColor="#ffa09a9a"
+        android:inputType="numberDecimal"
+        android:enabled="true"
+        android:textStyle="italic"
+        android:background="#ff3e414d"
+        android:textSize="16dp"
+        android:layout_above="@+id/drinklists"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
