@@ -24,5 +24,6 @@ string>                                        <string name="title_activity_regi
     <string name="title_activity_food_act2">FoodAct2</string>
     <string name="title_activity_choice2">choice2</string>
     <string name="title_activity_choice3">choice3</string>
+    <string name="title_activity_justfood2">justfood2</string>
 
 </resources>

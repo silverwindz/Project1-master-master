@@ -177,7 +177,7 @@ public class Exercal extends ActionBarActivity {
 
         switch(id) {
             case R.id.confirm:
-                i = new Intent(this, exercise_list.class);
+                i = new Intent(this, MainActivity.class);
                 startActivity(i);
                 break;
         }
@@ -273,13 +273,13 @@ public class Exercal extends ActionBarActivity {
         protected void onPostExecute(Boolean result) {
             if (result) {
                 Toast t = Toast.makeText(Exercal.this.getApplicationContext(),
-                        "Successfully register",
+                        "Complete Calculation",
                         Toast.LENGTH_SHORT);
                 t.show();
             }
             else {
                 Toast t = Toast.makeText(Exercal.this.getApplicationContext(),
-                        "Unable to register: " + errMsg,
+                        "Unable to Calculate: " + errMsg,
                         Toast.LENGTH_SHORT);
                 t.show();
             }

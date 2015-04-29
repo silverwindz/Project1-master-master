@@ -11,10 +11,14 @@ import android.view.View;
 
 public class choice2 extends ActionBarActivity {
 
-    public String foodcal="";
-    public String fndcal="";
-    public double allcal;
-    public Double fdccal;
+    //public String foodcal="";
+    //public String fndcal="";
+    //public double allcal;
+    //public Double fdccal;
+    public double allcall;
+    public String allcal ="";
+    public Double all;
+    public String al="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +26,14 @@ public class choice2 extends ActionBarActivity {
         setContentView(R.layout.activity_choice2);
         Intent i = this.getIntent();
         //foodcal = i.getStringExtra("foodcal");
-        fndcal = i.getStringExtra("fdcal");
+       // fndcal = i.getStringExtra("fdcal");
 
         //Double focal = Double.parseDouble(foodcal);
-        fdccal = Double.parseDouble(fndcal);
+        //fdccal = Double.parseDouble(fndcal);
+        allcal = i.getStringExtra("calculatepls");
+        all = Double.parseDouble(allcal);
 
-        allcal = fdccal;
+        allcall = all;
 
     }
 
@@ -36,7 +42,9 @@ public class choice2 extends ActionBarActivity {
         Intent i;
         switch(id) {
             case R.id.food:
-                i = new Intent(this, justfood.class);
+                i = new Intent(this, justfood2.class);
+                al = String.valueOf(allcall);
+                i.putExtra("allcal", allcal);
                 startActivity(i);
                 break;
 
@@ -47,7 +55,7 @@ public class choice2 extends ActionBarActivity {
 
             case R.id.confirm:
                 i = new Intent(this, FoodAct2.class);
-
+                al = String.valueOf(allcall);
                 i.putExtra("allcal", allcal);
                 startActivity(i);
                 break;

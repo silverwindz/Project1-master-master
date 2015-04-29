@@ -75,6 +75,10 @@
             android:name=".choice3"
             android:label="@string/title_activity_choice3" >
         </activity>
+        <activity
+            android:name=".justfood2"
+            android:label="@string/title_activity_justfood2" >
+        </activity>
     </application>
 
 </manifest>

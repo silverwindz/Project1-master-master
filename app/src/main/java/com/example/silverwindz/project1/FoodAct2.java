@@ -14,6 +14,7 @@ public class FoodAct2 extends ActionBarActivity {
 
     public Double allcal1;
     public double allcalplus;
+    public String all="";
 
 
 
@@ -37,26 +38,35 @@ public class FoodAct2 extends ActionBarActivity {
         switch(id) {
             case R.id.breakfast:
                 i = new Intent(this, choice2.class);
+
+                all = String.valueOf(allcalplus);
+                i.putExtra("calculatepls", all);
                 startActivity(i);
                 break;
 
             case R.id.lunch:
                 i = new Intent(this, choice2.class);
+
+                all = String.valueOf(allcalplus);
+                i.putExtra("calculatepls", all);
                 startActivity(i);
                 break;
 
             case R.id.din:
                 i = new Intent(this, choice2.class);
+
+                all = String.valueOf(allcalplus);
+                i.putExtra("calculatepls", all);
                 startActivity(i);
                 break;
 
             case R.id.clear:
-                allcalplus = 0;
+                TextView CAL = (TextView)findViewById(R.id.OC);
+                CAL.setText("0");
                 break;
 
             case R.id.confirm:
                 i = new Intent(this, MainActivity.class);
-                i.putExtra("calculatepls", allcalplus);
                 startActivity(i);
                 break;
         }
